@@ -6,7 +6,7 @@ from stepguard_pipeline import analyse_video
 
 st.set_page_config(page_title='StepGuard',layout='wide')
 st.title('StepGuard')
-# st.caption('Recorded-video step baseline, temporal smoothing, explicit rules and evidence reports.')
+
 mode=st.radio('Choose workflow',['Synthetic demonstration','Your assembly recording'])
 
 def clean_previous():
