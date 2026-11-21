@@ -1,6 +1,4 @@
-"""Sprint 1: local video ingestion, frame manifests and reviewed YOLO dataset export.
-No step recognition, error diagnosis or trained model is bundled.
-"""
+
 from pathlib import Path
 import hashlib
 import json

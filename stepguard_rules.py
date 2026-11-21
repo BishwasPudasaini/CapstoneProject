@@ -64,15 +64,14 @@ class ProcedureEngine:
         if unmet:
             self.states[step_id]='prerequisite_unobserved'
             self.alert('sequence_prerequisite_unobserved',step_id,t,unmet)
-            # Absence of a recorded prerequisite is not proof of a physical omission.
+           
             state='prerequisite_unobserved'
         else:
             self.observed.add(step_id);self.states[step_id]='observed_checkpoint'
             state='observed_checkpoint'
         component_check='not_assessed'
         required=step.get('expected_components',[])
-        # A model failing to detect a part is not enough. A human-reviewed full checkpoint
-        # view and explicit checkpoint ID are required for this prototype's component rule.
+      
         if required and evidence and evidence.get('checkpoint_step')==step_id and evidence.get('coverage_reviewed') is True:
             component_check='checked_visible_view'
             missing=[]

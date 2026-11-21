@@ -1,6 +1,4 @@
-"""CPU baseline: spatial colour/texture features + logistic regression + causal smoothing.
-A small-data baseline, not a pretrained assembly/action understanding model.
-"""
+
 from pathlib import Path
 import hashlib
 import json
@@ -37,7 +35,7 @@ def sample_video(path, hz=2., max_samples=600):
             if not ok: break
             t=i/meta['fps']
             if t+1e-8 >= next_time:
-                # Bounded memory: inference and previews use a standard analysis resolution.
+               
                 img=cv2.resize(img,(320,240))
                 frames.append({'timestamp_seconds':round(t,6),'frame_index':i,'image':img})
                 next_time+=1/hz
@@ -149,7 +147,7 @@ def train_model(manifest_path,procedure,output,*,allow_synthetic=False,hz=2.,win
 
 
 def load_model(path,procedure):
-    # joblib can execute code: local trusted team-generated checkpoints only.
+  
     bundle=joblib.load(path)
     if bundle.get('feature_version')!=FEATURE_VERSION: raise ValueError('Feature-version mismatch; retrain.')
     if bundle['procedure_id']!=procedure['id'] or bundle['procedure_version']!=procedure['version']:
