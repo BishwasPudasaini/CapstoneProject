@@ -1,0 +1,103 @@
+{
+  "video_sha256": "a032dc0a10218385af3393f2832372ba164e728386a67e909a47b1c24cda8161",
+  "synthetic": true,
+  "source": "SCRIPTED count evidence for software testing; not visual ground truth or detector inference.",
+  "frames": [
+    {
+      "timestamp_seconds": 12.0,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 12.5,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 13.0,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 13.5,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 14.0,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 14.5,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 15.0,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    },
+    {
+      "timestamp_seconds": 15.5,
+      "checkpoint_step": "S3",
+      "coverage_reviewed": true,
+      "source": "SCRIPTED rule-test fixture, not a detector or human review",
+      "detections": [
+        {
+          "class_name": "wheel",
+          "score": 0.99
+        }
+      ]
+    }
+  ]
+}

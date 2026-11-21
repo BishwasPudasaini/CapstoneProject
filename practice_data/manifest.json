@@ -1,0 +1,203 @@
+{
+  "synthetic": true,
+  "sessions": [
+    {
+      "id": "fixture_00",
+      "source_group": "fixture_00",
+      "video": "videos/fixture_00.mp4",
+      "split": "train",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "fixture_01",
+      "source_group": "fixture_01",
+      "video": "videos/fixture_01.mp4",
+      "split": "train",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "fixture_02",
+      "source_group": "fixture_02",
+      "video": "videos/fixture_02.mp4",
+      "split": "train",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "fixture_03",
+      "source_group": "fixture_03",
+      "video": "videos/fixture_03.mp4",
+      "split": "train",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "fixture_04",
+      "source_group": "fixture_04",
+      "video": "videos/fixture_04.mp4",
+      "split": "val",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "fixture_05",
+      "source_group": "fixture_05",
+      "video": "videos/fixture_05.mp4",
+      "split": "val",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "test_correct",
+      "source_group": "test_correct",
+      "video": "videos/test_correct.mp4",
+      "split": "test",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S3"
+        }
+      ]
+    },
+    {
+      "id": "test_reordered",
+      "source_group": "test_reordered",
+      "video": "videos/test_reordered.mp4",
+      "split": "test",
+      "permission_confirmed": true,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 4.0,
+          "step_id": "S1"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "step_id": "S3"
+        },
+        {
+          "start": 8.0,
+          "end": 12.0,
+          "step_id": "S2"
+        },
+        {
+          "start": 12.0,
+          "end": 16.0,
+          "step_id": "S3"
+        }
+      ]
+    }
+  ],
+  "description": "SYNTHETIC illustrations; pipeline practice only, not real assembly research evidence."
+}

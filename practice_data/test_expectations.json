@@ -1,0 +1,11 @@
+{
+  "disclaimer": "Expected rule behaviours for fixtures, not real fault annotations.",
+  "test_correct": {
+    "sequence_alerts_expected": 0,
+    "component_checks": "not assessed without evidence"
+  },
+  "test_reordered": {
+    "sequence_alert_expected": "S3 before prerequisite S2 is observed",
+    "component_alert_only_with_scripted_evidence": "Injected one-wheel observations at final S3; not an actual image-grounded defect"
+  }
+}
