@@ -19,7 +19,6 @@ def new_root():
     return Path(temp.name)
 
 if mode=='Synthetic demonstration':
-    # st.warning('Generated illustrations and scripted component evidence test the software only. These are not real assembly results.')
     if st.button('Run full demo'):
         root=new_root()
         try:
