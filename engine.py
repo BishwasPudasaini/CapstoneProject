@@ -230,7 +230,7 @@ class LiveMonitor:
             start=time.monotonic(); next_sample=0.; index=0
             while not self.stop_event.is_set():
                 if time.monotonic()-self.last_heartbeat>15:
-                    self.reason='browser heartbeat timeout'; break
+                    self.reason=' timeout'; break
                 elapsed=time.monotonic()-start
                 if elapsed>300:
                     self.reason='five-minute session limit'; break

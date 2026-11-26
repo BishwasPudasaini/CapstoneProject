@@ -1,11 +1,9 @@
-"""Train a four-or-more-class visual checkpoint baseline; export portable NumPy weights."""
 from pathlib import Path
 import argparse,json,platform
 import numpy as np
 from engine import ROOT,FEATURE_VERSION,features,video_frames,procedure,signature,digest
 
 def train(manifest_path,output):
-    # Lazy imports: inference does not depend on sklearn DLLs or pickle checkpoints.
     import sklearn
     from sklearn.pipeline import make_pipeline
     from sklearn.preprocessing import StandardScaler
@@ -66,7 +64,7 @@ def train(manifest_path,output):
             'train_samples':len(y),'classes':model.classes_.tolist(),'metrics':{},
             'note':'Test data is held out. Do not tune using test results. Scores do not measure physical build correctness.'}
     report['evaluation_status']='not_evaluated' if training_only else 'held_out_evaluation'
-    if training_only: report['note']='Trained on two or more source recordings. No independent validation/test data; accuracy is not measured.'
+    if training_only: report['note']='Trained on two or more source recordings.'
     for split in ([] if training_only else ['validation','test']):
         Xt,yt=flatten(split);pred=model.predict(Xt)
         smooth_pred=[]
@@ -87,7 +85,6 @@ def train(manifest_path,output):
         'model_id':digest(manifest_path)[:12], 'smoothing_frames':window, 'evaluation_status':report['evaluation_status'],
         'training_video_hashes':sorted(digest((manifest_path.parent/i['video']).resolve()) for i in data['sessions'] if i['split']=='train')}
     output=Path(output); output.parent.mkdir(parents=True,exist_ok=True)
-    # Use an atomic replace, so an interrupted training run cannot corrupt an existing model.
     temp=output.with_suffix('.tmp.npz')
     np.savez_compressed(temp,mean=scaler.mean_,scale=scaler.scale_,coef=clf.coef_,intercept=clf.intercept_,
                         classes=model.classes_,metadata=np.array(json.dumps(metadata)))
