@@ -1,0 +1,69 @@
+{
+  "b99122c7986de7445e5aaf4450d2b8138c7d6c277f00978d88e9ce0eda340bd9": {
+    "original": "training video1.mp4",
+    "source_group": "original_1",
+    "segments": [
+      {
+        "start": 0,
+        "end": 1.5,
+        "step_id": "unknown"
+      },
+      {
+        "start": 2.5,
+        "end": 3.5,
+        "step_id": "S1"
+      },
+      {
+        "start": 6,
+        "end": 7.5,
+        "step_id": "S2"
+      },
+      {
+        "start": 10,
+        "end": 11.5,
+        "step_id": "S3"
+      },
+      {
+        "start": 13.5,
+        "end": 16,
+        "step_id": "S4"
+      }
+    ]
+  },
+  "1fa6c9c83c07ff2bfc013e14f9d3cf60a69c22fc05907d875bdfd6c032d1636a": {
+    "original": "trainingvideo2.mp4",
+    "source_group": "original_2",
+    "segments": [
+      {
+        "start": 0,
+        "end": 0.4,
+        "step_id": "unknown"
+      },
+      {
+        "start": 3,
+        "end": 4,
+        "step_id": "S1"
+      },
+      {
+        "start": 5.5,
+        "end": 7,
+        "step_id": "S1"
+      },
+      {
+        "start": 10.5,
+        "end": 11.5,
+        "step_id": "S2"
+      },
+      {
+        "start": 13.5,
+        "end": 14.5,
+        "step_id": "S3"
+      },
+      {
+        "start": 16.5,
+        "end": 18.5,
+        "step_id": "S4"
+      }
+    ]
+  }
+}

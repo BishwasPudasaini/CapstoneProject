@@ -1,0 +1,3126 @@
+{
+  "procedure": "User four-colour assembly checkpoints",
+  "model": {
+    "feature_version": "lego-spatial-v1",
+    "procedure_hash": "465a8ce68b3bd0be942273c381b546e01227e79d8426f006f86306fee8011b8d",
+    "synthetic": false,
+    "algorithm": "StandardScaler + multinomial LogisticRegression",
+    "sklearn_training_version": "1.9.1",
+    "python": "3.12.13",
+    "manifest_sha256": "f6d815f450858a6abcfe77ef335c0ce5272a2453fd9f008af55fd371b9129532",
+    "sample_hz": 2,
+    "model_id": "f6d815f45085",
+    "smoothing_frames": 1,
+    "evaluation_status": "not_evaluated",
+    "training_video_hashes": [
+      "1fa6c9c83c07ff2bfc013e14f9d3cf60a69c22fc05907d875bdfd6c032d1636a",
+      "83eda19691a39663a7f268272fd3a3d544f0afe0a2af27821c142847ee178e7a",
+      "b99122c7986de7445e5aaf4450d2b8138c7d6c277f00978d88e9ce0eda340bd9"
+    ]
+  },
+  "finished": true,
+  "end_reason": "end of recording",
+  "status": "all_checkpoints_observed",
+  "steps_not_observed": [],
+  "steps": [
+    {
+      "step": "S1",
+      "name": "Red visible",
+      "status": "observed",
+      "first_observed_seconds": 2.53
+    },
+    {
+      "step": "S2",
+      "name": "Red and blue joined",
+      "status": "observed",
+      "first_observed_seconds": 9.012
+    },
+    {
+      "step": "S3",
+      "name": "Red, blue and yellow joined",
+      "status": "observed",
+      "first_observed_seconds": 17.019
+    },
+    {
+      "step": "S4",
+      "name": "Red, blue, yellow and green joined",
+      "status": "observed",
+      "first_observed_seconds": 27.002
+    }
+  ],
+  "alerts": [],
+  "timeline": [
+    {
+      "time_seconds": 0.0,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.49,
+      "blur": 97.18
+    },
+    {
+      "time_seconds": 0.52,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.68,
+      "blur": 85.77
+    },
+    {
+      "time_seconds": 1.005,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9182,
+      "ml_margin": 0.8364,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.05,
+      "blur": 74.39
+    },
+    {
+      "time_seconds": 1.525,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            163,
+            290,
+            154,
+            151
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.05,
+      "blur": 92.61
+    },
+    {
+      "time_seconds": 2.01,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            165,
+            303,
+            155,
+            156
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.59,
+      "blur": 89.27
+    },
+    {
+      "time_seconds": 2.53,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            159,
+            298,
+            162,
+            164
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.07,
+      "blur": 69.77
+    },
+    {
+      "time_seconds": 3.016,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            142,
+            310,
+            159,
+            157
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.61,
+      "blur": 87.72
+    },
+    {
+      "time_seconds": 3.501,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            135,
+            306,
+            159,
+            159
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.65,
+      "blur": 78.33
+    },
+    {
+      "time_seconds": 4.021,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            127,
+            302,
+            159,
+            165
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.59,
+      "blur": 97.09
+    },
+    {
+      "time_seconds": 4.506,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            292,
+            160,
+            173
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.21,
+      "blur": 91.7
+    },
+    {
+      "time_seconds": 5.026,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9994,
+      "ml_margin": 0.9989,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            311,
+            159,
+            156
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.57,
+      "blur": 87.2
+    },
+    {
+      "time_seconds": 5.511,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            297,
+            162,
+            171
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.8,
+      "blur": 87.77
+    },
+    {
+      "time_seconds": 6.031,
+      "ml_candidate": "S1",
+      "ml_score": 0.6459,
+      "ml_margin": 0.2918,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            147,
+            315,
+            158,
+            149
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.58,
+      "blur": 90.9
+    },
+    {
+      "time_seconds": 6.517,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            159,
+            304,
+            153,
+            159
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.7,
+      "blur": 88.46
+    },
+    {
+      "time_seconds": 7.002,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            159,
+            309,
+            159,
+            147
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.74,
+      "blur": 87.56
+    },
+    {
+      "time_seconds": 7.522,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S1",
+      "arrangement": "valid_visible_state",
+      "reason": "Red region detected.",
+      "colour_order": [
+        "red"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            149,
+            292,
+            159,
+            162
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.96,
+      "blur": 88.88
+    },
+    {
+      "time_seconds": 8.007,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            139,
+            315,
+            156,
+            140
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            156,
+            173,
+            143,
+            128
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.23,
+      "blur": 122.36
+    },
+    {
+      "time_seconds": 8.527,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            163,
+            324,
+            148,
+            146
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            198,
+            212,
+            113,
+            120
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.3,
+      "blur": 97.65
+    },
+    {
+      "time_seconds": 9.012,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            165,
+            346,
+            143,
+            109
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            182,
+            249,
+            141,
+            117
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.11,
+      "blur": 91.66
+    },
+    {
+      "time_seconds": 9.532,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            149,
+            357,
+            164,
+            113
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            172,
+            236,
+            157,
+            143
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.4,
+      "blur": 79.37
+    },
+    {
+      "time_seconds": 10.017,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [
+        {
+          "colour": "blue",
+          "bbox": [
+            149,
+            243,
+            158,
+            144
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.9,
+      "blur": 90.28
+    },
+    {
+      "time_seconds": 10.503,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [
+        {
+          "colour": "blue",
+          "bbox": [
+            169,
+            245,
+            158,
+            146
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.49,
+      "blur": 96.32
+    },
+    {
+      "time_seconds": 11.023,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [
+        {
+          "colour": "blue",
+          "bbox": [
+            178,
+            246,
+            158,
+            145
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.11,
+      "blur": 97.04
+    },
+    {
+      "time_seconds": 11.508,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9984,
+      "ml_margin": 0.9967,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            159,
+            361,
+            159,
+            113
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            178,
+            239,
+            157,
+            144
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.15,
+      "blur": 81.77
+    },
+    {
+      "time_seconds": 12.028,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            161,
+            343,
+            157,
+            113
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            180,
+            222,
+            154,
+            143
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.33,
+      "blur": 93.6
+    },
+    {
+      "time_seconds": 12.513,
+      "ml_candidate": "S1",
+      "ml_score": 0.7223,
+      "ml_margin": 0.4452,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            163,
+            341,
+            154,
+            108
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            181,
+            221,
+            154,
+            142
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.67,
+      "blur": 94.11
+    },
+    {
+      "time_seconds": 13.033,
+      "ml_candidate": "S3",
+      "ml_score": 0.9712,
+      "ml_margin": 0.9424,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            174,
+            346,
+            157,
+            113
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            195,
+            227,
+            155,
+            144
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.16,
+      "blur": 81.18
+    },
+    {
+      "time_seconds": 13.518,
+      "ml_candidate": "S3",
+      "ml_score": 0.9999,
+      "ml_margin": 0.9997,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            173,
+            346,
+            156,
+            114
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            193,
+            228,
+            155,
+            143
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 29.75,
+      "blur": 83.37
+    },
+    {
+      "time_seconds": 14.004,
+      "ml_candidate": "S3",
+      "ml_score": 0.9389,
+      "ml_margin": 0.8778,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            159,
+            345,
+            159,
+            110
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            182,
+            227,
+            154,
+            141
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 30.2,
+      "blur": 77.12
+    },
+    {
+      "time_seconds": 14.524,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            144,
+            346,
+            155,
+            110
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            161,
+            227,
+            153,
+            138
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            177,
+            86,
+            135,
+            127
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 36.81,
+      "blur": 116.61
+    },
+    {
+      "time_seconds": 15.009,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [
+        {
+          "colour": "blue",
+          "bbox": [
+            170,
+            249,
+            154,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 35.2,
+      "blur": 121.28
+    },
+    {
+      "time_seconds": 15.529,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            187,
+            347,
+            122,
+            96
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            190,
+            257,
+            121,
+            94
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.38,
+      "blur": 124.03
+    },
+    {
+      "time_seconds": 16.014,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            196,
+            333,
+            123,
+            94
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            196,
+            252,
+            129,
+            88
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            242,
+            173,
+            87,
+            84
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 31.81,
+      "blur": 112.95
+    },
+    {
+      "time_seconds": 16.534,
+      "ml_candidate": "S1",
+      "ml_score": 0.9396,
+      "ml_margin": 0.8971,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            144,
+            330,
+            151,
+            98
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            156,
+            246,
+            147,
+            93
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            167,
+            136,
+            143,
+            121
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.3,
+      "blur": 94.76
+    },
+    {
+      "time_seconds": 17.019,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            344,
+            149,
+            99
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            161,
+            259,
+            150,
+            95
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            173,
+            148,
+            146,
+            121
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.05,
+      "blur": 107.85
+    },
+    {
+      "time_seconds": 17.505,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9999,
+      "ml_margin": 0.9998,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            146,
+            357,
+            155,
+            98
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            158,
+            270,
+            151,
+            96
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            170,
+            158,
+            145,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 35.01,
+      "blur": 123.3
+    },
+    {
+      "time_seconds": 18.025,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            149,
+            353,
+            155,
+            104
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            161,
+            267,
+            151,
+            98
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            172,
+            155,
+            145,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.06,
+      "blur": 137.33
+    },
+    {
+      "time_seconds": 18.51,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            143,
+            352,
+            157,
+            104
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            157,
+            266,
+            150,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            169,
+            155,
+            145,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.61,
+      "blur": 140.21
+    },
+    {
+      "time_seconds": 19.03,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            140,
+            351,
+            157,
+            102
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            154,
+            264,
+            152,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            166,
+            152,
+            146,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.93,
+      "blur": 134.52
+    },
+    {
+      "time_seconds": 19.515,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            135,
+            355,
+            163,
+            103
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            152,
+            269,
+            151,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            165,
+            156,
+            144,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.98,
+      "blur": 136.36
+    },
+    {
+      "time_seconds": 20.0,
+      "ml_candidate": "unknown",
+      "ml_score": 0.6433,
+      "ml_margin": 0.2867,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            149,
+            353,
+            151,
+            101
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            157,
+            265,
+            153,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            169,
+            152,
+            146,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 35.0,
+      "blur": 127.73
+    },
+    {
+      "time_seconds": 20.52,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            163,
+            344,
+            159,
+            100
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            174,
+            257,
+            150,
+            94
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            182,
+            141,
+            147,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.57,
+      "blur": 124.08
+    },
+    {
+      "time_seconds": 21.005,
+      "ml_candidate": "S4",
+      "ml_score": 0.7866,
+      "ml_margin": 0.5803,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            161,
+            339,
+            159,
+            97
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            171,
+            249,
+            153,
+            96
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            181,
+            132,
+            148,
+            125
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.82,
+      "blur": 133.28
+    },
+    {
+      "time_seconds": 21.525,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9875,
+      "ml_margin": 0.975,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            154,
+            340,
+            163,
+            107
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            166,
+            251,
+            154,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            175,
+            133,
+            149,
+            126
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.41,
+      "blur": 135.27
+    },
+    {
+      "time_seconds": 22.011,
+      "ml_candidate": "S3",
+      "ml_score": 0.9994,
+      "ml_margin": 0.9988,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            161,
+            343,
+            153,
+            96
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            167,
+            254,
+            154,
+            96
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            179,
+            137,
+            146,
+            125
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.09,
+      "blur": 134.46
+    },
+    {
+      "time_seconds": 22.531,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9997,
+      "ml_margin": 0.9994,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            155,
+            345,
+            161,
+            104
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            167,
+            256,
+            154,
+            97
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            176,
+            138,
+            149,
+            126
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.46,
+      "blur": 135.29
+    },
+    {
+      "time_seconds": 23.016,
+      "ml_candidate": "S1",
+      "ml_score": 0.6611,
+      "ml_margin": 0.3224,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            151,
+            339,
+            156,
+            98
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            163,
+            250,
+            152,
+            95
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            172,
+            135,
+            148,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.82,
+      "blur": 118.93
+    },
+    {
+      "time_seconds": 23.501,
+      "ml_candidate": "S4",
+      "ml_score": 0.838,
+      "ml_margin": 0.6764,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            145,
+            334,
+            155,
+            96
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            154,
+            246,
+            153,
+            94
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            164,
+            130,
+            147,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 37.0,
+      "blur": 132.81
+    },
+    {
+      "time_seconds": 24.021,
+      "ml_candidate": "S4",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            141,
+            340,
+            159,
+            95
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            148,
+            251,
+            154,
+            92
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            155,
+            152,
+            148,
+            101
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 38.49,
+      "blur": 159.09
+    },
+    {
+      "time_seconds": 24.506,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9913,
+      "ml_margin": 0.9826,
+      "step": "S2",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            160,
+            354,
+            146,
+            98
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            160,
+            266,
+            149,
+            93
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 34.03,
+      "blur": 130.61
+    },
+    {
+      "time_seconds": 25.026,
+      "ml_candidate": "S3",
+      "ml_score": 0.9905,
+      "ml_margin": 0.9811,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            187,
+            342,
+            120,
+            98
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            186,
+            254,
+            129,
+            93
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            232,
+            176,
+            88,
+            82
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.06,
+      "blur": 151.09
+    },
+    {
+      "time_seconds": 25.512,
+      "ml_candidate": "unknown",
+      "ml_score": 0.5276,
+      "ml_margin": 0.0552,
+      "step": "S3",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            173,
+            351,
+            137,
+            105
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            172,
+            263,
+            147,
+            98
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            216,
+            187,
+            113,
+            85
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.72,
+      "blur": 139.37
+    },
+    {
+      "time_seconds": 26.032,
+      "ml_candidate": "S4",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            138,
+            351,
+            155,
+            103
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            150,
+            261,
+            158,
+            101
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            163,
+            180,
+            160,
+            94
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            175,
+            71,
+            144,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.82,
+      "blur": 143.44
+    },
+    {
+      "time_seconds": 26.517,
+      "ml_candidate": "S4",
+      "ml_score": 0.9973,
+      "ml_margin": 0.9945,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            138,
+            352,
+            168,
+            110
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            156,
+            262,
+            160,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            170,
+            180,
+            155,
+            98
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            183,
+            73,
+            148,
+            124
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.86,
+      "blur": 135.33
+    },
+    {
+      "time_seconds": 27.002,
+      "ml_candidate": "S4",
+      "ml_score": 0.9917,
+      "ml_margin": 0.9834,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            158,
+            349,
+            159,
+            107
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            170,
+            258,
+            159,
+            106
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            187,
+            177,
+            153,
+            96
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            197,
+            70,
+            144,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.98,
+      "blur": 141.53
+    },
+    {
+      "time_seconds": 27.522,
+      "ml_candidate": "S4",
+      "ml_score": 0.9991,
+      "ml_margin": 0.9983,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            158,
+            347,
+            168,
+            108
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            180,
+            258,
+            157,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            194,
+            179,
+            152,
+            94
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            206,
+            70,
+            143,
+            125
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.58,
+      "blur": 141.23
+    },
+    {
+      "time_seconds": 28.007,
+      "ml_candidate": "S4",
+      "ml_score": 0.998,
+      "ml_margin": 0.9959,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            161,
+            347,
+            161,
+            106
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            179,
+            258,
+            157,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            196,
+            178,
+            148,
+            96
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            206,
+            75,
+            142,
+            120
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.75,
+      "blur": 153.22
+    },
+    {
+      "time_seconds": 28.527,
+      "ml_candidate": "S4",
+      "ml_score": 0.9009,
+      "ml_margin": 0.8018,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            168,
+            348,
+            162,
+            109
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            186,
+            260,
+            157,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            202,
+            182,
+            149,
+            95
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            217,
+            76,
+            141,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.86,
+      "blur": 149.36
+    },
+    {
+      "time_seconds": 29.013,
+      "ml_candidate": "S3",
+      "ml_score": 1.0,
+      "ml_margin": 0.9999,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            158,
+            346,
+            158,
+            107
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            175,
+            258,
+            156,
+            106
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            192,
+            180,
+            150,
+            96
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            205,
+            77,
+            142,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.76,
+      "blur": 148.68
+    },
+    {
+      "time_seconds": 29.532,
+      "ml_candidate": "S4",
+      "ml_score": 0.6018,
+      "ml_margin": 0.2037,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            155,
+            350,
+            157,
+            106
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            170,
+            262,
+            157,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            189,
+            183,
+            149,
+            95
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            201,
+            77,
+            147,
+            124
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.87,
+      "blur": 153.84
+    },
+    {
+      "time_seconds": 30.018,
+      "ml_candidate": "unknown",
+      "ml_score": 0.7915,
+      "ml_margin": 0.5831,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            157,
+            353,
+            160,
+            106
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            175,
+            264,
+            156,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            192,
+            186,
+            146,
+            96
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            205,
+            80,
+            140,
+            124
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.92,
+      "blur": 150.3
+    },
+    {
+      "time_seconds": 30.503,
+      "ml_candidate": "S4",
+      "ml_score": 0.9999,
+      "ml_margin": 0.9997,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            353,
+            156,
+            107
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            166,
+            265,
+            156,
+            104
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            183,
+            188,
+            150,
+            95
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            195,
+            82,
+            142,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.68,
+      "blur": 154.56
+    },
+    {
+      "time_seconds": 31.023,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            146,
+            354,
+            161,
+            110
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            163,
+            266,
+            156,
+            104
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            179,
+            189,
+            148,
+            94
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            192,
+            84,
+            142,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.79,
+      "blur": 147.3
+    },
+    {
+      "time_seconds": 31.508,
+      "ml_candidate": "S4",
+      "ml_score": 0.9997,
+      "ml_margin": 0.9994,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            152,
+            354,
+            159,
+            107
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            168,
+            267,
+            155,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            182,
+            189,
+            152,
+            95
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            196,
+            84,
+            147,
+            122
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.9,
+      "blur": 152.62
+    },
+    {
+      "time_seconds": 32.028,
+      "ml_candidate": "unknown",
+      "ml_score": 1.0,
+      "ml_margin": 1.0,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            149,
+            355,
+            161,
+            108
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            166,
+            267,
+            157,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            181,
+            189,
+            153,
+            95
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            195,
+            83,
+            147,
+            123
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 32.96,
+      "blur": 152.91
+    },
+    {
+      "time_seconds": 32.513,
+      "ml_candidate": "unknown",
+      "ml_score": 0.9999,
+      "ml_margin": 0.9999,
+      "step": "S4",
+      "arrangement": "valid_visible_state",
+      "reason": "Aligned colour regions match the expected order.",
+      "colour_order": [
+        "red",
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "detections": [
+        {
+          "colour": "red",
+          "bbox": [
+            160,
+            366,
+            161,
+            109
+          ]
+        },
+        {
+          "colour": "blue",
+          "bbox": [
+            176,
+            278,
+            156,
+            105
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            193,
+            199,
+            147,
+            96
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            204,
+            90,
+            145,
+            125
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 33.82,
+      "blur": 146.55
+    },
+    {
+      "time_seconds": 33.033,
+      "ml_candidate": "S4",
+      "ml_score": 0.9595,
+      "ml_margin": 0.9197,
+      "step": "unknown",
+      "arrangement": "uncertain",
+      "reason": "No clear red base in view.",
+      "colour_order": [],
+      "detections": [
+        {
+          "colour": "blue",
+          "bbox": [
+            167,
+            284,
+            156,
+            102
+          ]
+        },
+        {
+          "colour": "yellow",
+          "bbox": [
+            182,
+            204,
+            149,
+            94
+          ]
+        },
+        {
+          "colour": "green",
+          "bbox": [
+            191,
+            94,
+            145,
+            124
+          ]
+        }
+      ],
+      "roi_pixels": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "quality_ok": true,
+      "brightness": 35.08,
+      "blur": 142.18
+    }
+  ],
+  "policy": {
+    "threshold": 0.7,
+    "margin": 0.15,
+    "smoothing_frames": 1,
+    "stable_samples": 3,
+    "detector": "colour_geometry"
+  },
+  "limitations": [
+    "Not observed does not prove physically skipped.",
+    "Visible states are not proof of performed actions or secure connections.",
+    "Scores and thresholds are not calibrated; unfamiliar objects can still be classified confidently.",
+    "Colour regions can be confused with similarly coloured objects. Partial occlusion may resemble an earlier state.",
+    "Colour geometry is rule-based, not learned; ML scores are diagnostic only in colour mode.",
+    "No hidden-connection inspection or physical attachment verification."
+  ],
+  "video_sha256": "7083e508e6464f8df1b59461cccb08dfc43799253281b24a450c98a447138278"
+}

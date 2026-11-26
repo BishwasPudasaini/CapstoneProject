@@ -1,0 +1,14 @@
+{
+  "dataset": "USER-LABELLED REAL LEGO",
+  "train_samples": 38,
+  "classes": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "unknown"
+  ],
+  "metrics": {},
+  "note": "Trained on two or more source recordings.",
+  "evaluation_status": "not_evaluated"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "user_colour_build",
+  "version": "2",
+  "name": "User four-colour assembly checkpoints",
+  "steps": [
+    {
+      "id": "S1",
+      "name": "Red visible",
+      "requires": [],
+      "instruction": "Show the red base in the working area."
+    },
+    {
+      "id": "S2",
+      "name": "Red and blue joined",
+      "requires": [
+        "S1"
+      ],
+      "instruction": "Join blue to red as in your reference recording."
+    },
+    {
+      "id": "S3",
+      "name": "Red, blue and yellow joined",
+      "requires": [
+        "S2"
+      ],
+      "instruction": "Add yellow and show all three joined pieces."
+    },
+    {
+      "id": "S4",
+      "name": "Red, blue, yellow and green joined",
+      "requires": [
+        "S3"
+      ],
+      "instruction": "Add green and show all four joined pieces."
+    }
+  ]
+}
