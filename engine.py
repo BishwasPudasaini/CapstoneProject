@@ -1,4 +1,4 @@
-"""Shared recorded/live inference. Pure NumPy checkpoint loading, no pickle."""
+
 from pathlib import Path
 from collections import deque
 import hashlib

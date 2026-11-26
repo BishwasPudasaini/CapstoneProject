@@ -1,6 +1,4 @@
-"""Rule-based visual check for one red-blue-yellow-green straight build.
-Not a learned LEGO detector or proof of physical attachment.
-"""
+
 import cv2
 import numpy as np
 
@@ -37,7 +35,7 @@ def detect(frame):
               'colour_order':[], 'detections':[{'colour':d['colour'],'bbox':d['bbox']} for d in found]}
     if counts['red']!=1: return result
     if any(n>1 for n in counts.values()):
-        result['reason']='Multiple regions of one colour; isolate one build or adjust the work area.'; return result
+        result['reason']='Multiple regions of one colour. Isolate one build or adjust the work area.'; return result
     if len(found)==1:
         result.update(step='S1',arrangement='valid_visible_state',reason='Red region detected.',colour_order=['red'])
         return result

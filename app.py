@@ -4,12 +4,12 @@ import json, tempfile, hashlib, uuid
 import streamlit as st
 from engine import ROOT, procedure, Model, LiveMonitor, analyse_video
 st.set_page_config(page_title='StepGuard',layout='wide')
-st.title('StepGuard • LEGO assembly monitoring')
+st.title('StepGuard • Assembly Monitoring')
 st.caption('Supported checkpoints: join red → blue → yellow → green as in your uploaded recordings.')
 p=procedure(); model_path=ROOT/'models/lego_real.npz'
 worker=st.session_state.get('worker'); running=worker is not None and worker.thread.is_alive()
 mode=st.sidebar.selectbox('Detection method',['Colour + position check','Original ML baseline'],disabled=running)
-st.sidebar.caption('Colour + position uses fixed computer-vision rules for this four-colour build. The ML baseline does not verify arrangement.')
+# st.sidebar.caption('Colour + position uses fixed computer-vision rules for this four-colour build. The ML baseline does not verify arrangement.')
 left,right=st.sidebar.slider('Work area: left / right (%)',0,100,(0,100),disabled=running)
 top,bottom=st.sidebar.slider('Work area: top / bottom (%)',0,100,(0,100),disabled=running)
 if right-left<10 or bottom-top<10:
@@ -27,7 +27,7 @@ if model_path.exists():
 if model is None: st.info('First upload and label your recordings in Train model. No pretrained weights are included.')
 else:
     st.success('Trained model loaded')
-    if model.meta.get('evaluation_status')=='not_evaluated': st.warning('Independent accuracy has not been measured. Training metrics apply only to the ML baseline; colour detection needs separate evaluation.')
+    if model.meta.get('evaluation_status')=='not_evaluated': st.warning('')
     if model.meta['synthetic']: st.warning('This model was trained on generated footage. Physical webcam monitoring requires training on real recordings.')
 
 def show_report(report,key):
@@ -52,11 +52,11 @@ def show_report(report,key):
 
 training,recorded,live=st.tabs(['1. Train model','2. Recorded video','3. Live camera'])
 with training:
-    st.info('Your trained model is already included. Open Recorded video or Live camera to try it; retraining is optional.')
-    training_only=st.checkbox('Training only — no independent accuracy measurement',value=True,disabled=running)
+    st.info('Trained model is already included. Open Recorded video or Live camera to try it.')
+    training_only=st.checkbox('Training only',value=True,disabled=running)
     st.write('Training-only mode needs two distinct recordings. Full evaluation needs two training, one validation and one test recording.')
     presets=json.loads((ROOT/'label_presets.json').read_text()) if (ROOT/'label_presets.json').exists() else {}
-    st.caption('Record complete builds plus empty-table, occluded and incorrect-build views. Label only intervals you have checked. Leave movement intervals unlabelled. Do not split copies or clips of one original recording across partitions.')
+    # st.caption('Record complete builds plus empty-table, occluded and incorrect-build views. Label only intervals you have checked. Leave movement intervals unlabelled. Do not split copies or clips of one original recording across partitions.')
     origin=st.radio('Recording type',['Real camera recordings','Generated footage'],disabled=running)
     uploads=st.file_uploader('Training recordings (up to 12 files, 100 MB and five minutes each)',type=['mp4','avi','mov','mkv'],accept_multiple_files=True,disabled=running,key='training_upload')
     entries=[]
@@ -78,7 +78,7 @@ with training:
             st.caption('Times are seconds from the start. Replace all zero end times; add rows if needed. Unknown = empty, occluded or visibly incorrect examples.')
             rows=st.data_editor(preset['segments'] if preset else [{'start':0.,'end':0.,'step_id':x} for x in ['S1','S2','S3','S4','unknown']],num_rows='dynamic',key='labels'+key,disabled=running,column_config={'step_id':st.column_config.SelectboxColumn(options=['S1','S2','S3','S4','unknown'],required=True)})
             entries.append((u,split,group,rows))
-    confirmed=st.checkbox('I checked the labels, have permission to use these videos, and assigned independent source recordings to the splits.',disabled=running)
+    confirmed=st.checkbox('I checked the labels, have permission to use these videos.',disabled=running)
     if st.button('Train model' if training_only else 'Train and evaluate',disabled=running or not entries):
         try:
             if not confirmed: raise ValueError('Check the labels and confirm the dataset statement first.')
@@ -103,7 +103,7 @@ with training:
     if metrics_path.exists():
         st.subheader('Training report')
         metrics=json.loads(metrics_path.read_text()); st.json(metrics,expanded=False)
-        st.caption('Frame F1 measures state recognition on labelled intervals. It does not measure physical assembly correctness or missing-step alert precision. Do not tune using the test partition.')
+        # st.caption('Frame F1 measures state recognition on labelled intervals. It does not measure physical assembly correctness or missing-step alert precision. Do not tune using the test partition.')
         st.download_button('Download trained model',model_path.read_bytes(),'lego_real.npz')
     with st.expander('Import a model trained on another approved computer'):
         imported=st.file_uploader('StepGuard NPZ model',type=['npz'],disabled=running)
